@@ -34,3 +34,7 @@ Route::put('/assets/{id}/update', [AssetController::class, 'update']);
 
 //deleting the asset
 Route::delete('/assets/{id}/destroy', [AssetController::class, 'destroy']);
+
+
+Route::get('assets/{asset}/issue', [AssetController::class, 'issueForm']);
+Route::patch('assets/{asset}/issue', [AssetController::class, 'issue']);
